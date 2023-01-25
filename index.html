@@ -3,11 +3,123 @@
 
 <head>
     <meta charset=utf-8/>
+
+    <link href = "hw2.css" rel = "stylesheet">
+    <title>hw-02</title>
 </head>
 
 
 <body>
+    <div id = "data-abstraction">
+        <div class = "info">
+            <h1>Dataset Types</h1>
+            <table>
+              <tr>
+                <th>Data</th>
+                <th>Link</th>
+                <th>Dataset</th>
+              </tr>
+              <tr>
+                <td>Airports</td>
+                <td><a href = "data/Airports.csv" download = Airports.csv>link</a></td>
+                <td>Tables</td>
+              </tr>
+              <tr>
+                <td>Google Web</td>
+                <td><a href = "data/Google-Web.txt">link</a></td>
+                <td>Networks & Trees</td>
+              </tr>
+              <tr>
+                <td>UFO</td>
+                <td><a href = "data/UFO.csv" download = UFO.csv>link</a></td>
+                <td>Table</td>
+              </tr>
+            </table>
+        </div>
 
+        <div class = "info">
+            <h1>Data Types</h1>
+            <h2 class = "dataset">Airports</h2>
+            <li class = "dataset">Items of each airport entry</li>
+            <li class = "dataset">Attribute</li>
+            <ul class = "indent">
+                <li class = "dataset">Airport name: Categorical/Item</li>
+                <li class = "dataset">Lattitude & Longitude: Position</li>
+                <li class = "dataset">Last edited date: Ordered</li>
+            </ul>
+
+            <h2 class = "dataset">Google Web</h2>
+            <li class = "dataset">Items(nodes)</li>
+            <li class = "dataset">Networks</li>
+            <ul class = "indent">
+                <li class = "dataset">Nodes</li>
+            </ul>
+
+            <h2 class = "dataset">UFO</h2>
+            <li class = "dataset">Items of each UFO entry</li>
+            <li class = "dataset">Attributes</li>
+            <ul class = "indent">
+                <li class = "dataset">Datetime: Ordered</li>
+                <li class = "dataset">City, State, Country: Categorical/Item/Geometric</li>
+                <li class = "dataset">Shape: Categorical/Items</li>
+                <li class = "dataset">Duration: Attribute/Ordered</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id = "task-abstraction">
+        <h1 class = "center">Task Abstraction</h1>
+        <ul class = "container">
+        <img src="img/vis1.png" alt="Daily max temp in Vancouver">
+        <img src="img/vis2.png" alt="Mean temp">
+        </ul>
+
+        <ul class = "container">
+            <div>
+                <p>High-level task: Consume -> Present, to show the outstaning termperature.</p>
+                <p>Medium-level task: Lookup, since we know the target and don't know the location.</p>
+                <p>Low-level task: Identify, since we're only looking at 3 specific days.</p>
+                <p>Target: Multiple of one attribute -> Extremes</p>
+            </div>
+            <div>
+                <p>High-level task: Consume -> Present, to show the frequency of mean temperatures were 20F above normal.</p>
+                <p>Medium-level task: Explore, since we don't know either the target and the location.</p>
+                <p>Low-level task: Compare, since we're comparing the frequency of 2 different places.</p>
+                <p>Target: Many attributes -> Smilarity</p>
+            </div>
+        </ul>
+    </div>
+
+    <div id = "decoration">
+        <svg class = "circle" width="100" height="100">
+            <circle cx="50" cy="50" r="40"/>
+        </svg>
+
+        <svg class = "square" width="100" height="100">
+            <rect x="10" y="10" width = "80" height = "80"/>
+        </svg>
+
+        <svg class = "circle" width="100" height="100">
+            <circle cx="50" cy="50" r="40"/>
+        </svg>
+
+        <svg class = "square" width="100" height="100">
+            <rect x="10" y="10" width = "80" height = "80"/>
+        </svg>
+
+        <svg class = "circle" width="100" height="100">
+            <circle cx="50" cy="50" r="40"/>
+        </svg>
+        
+    </div>
+
+    <h1>Acknowledgement</h1>
+    <div>
+        <a href = https://css-tricks.com/snippets/css/a-guide-to-flexbox/>A Complete Guide to Flexbox</p>
+        <a href = https://www.w3schools.com/graphics/svg_intro.asp>SVG circle</p>
+        <a href = https://www.w3schools.com/graphics/svg_rect.asp>SVG square</p>
+
+    </div>
 
 </body>
 

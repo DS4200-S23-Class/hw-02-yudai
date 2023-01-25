@@ -1,0 +1,92 @@
+/* entire body section in Arial */ 
+body {
+	font-family: Arial;
+}
+
+table {
+	font-family: Arial;
+	width: 100%;
+}
+
+td, th {
+	text-align: center;
+}
+
+tr:nth-child(1) {
+	background-color: skyblue;
+}
+
+
+/* Class */
+/* info class styling */
+.info {
+	text-align: center;
+}
+
+/* dataset class styling */
+.dataset {
+	text-align: left;
+}
+
+/* indent class styling */
+.indent {
+	margin-right: -2em;
+}
+
+/* center class styling */
+.cernter {
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: stretch;
+}
+
+.container > * {
+	flex: 1 100%;
+}
+
+
+.square {
+	fill:skyblue;
+	stroke: black;
+	stroke-width: 2;
+}
+
+.square:hover {
+	fill:yellowgreen;
+	stroke: black;
+	stroke-width: 2;
+}
+
+
+
+.circle {
+	fill:skyblue;
+	opacity: 50%;
+}
+
+.circle:hover {
+	fill:skyblue;
+	opacity: 50%;
+	stroke: black;
+	stroke-width: 2;
+}
+
+
+/* id */
+/* id data-abstration styling */
+#data-abstraction {
+	text-align: left;
+}
+
+#decoration {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: stretch;
+}
+
+
+
